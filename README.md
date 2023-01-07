@@ -10,7 +10,7 @@ This package is R version for the Hierarchical Shinkage algorithm based on pytho
 
 Hierarchical shinkage is an extremely fast post-hoc regularization method which works on any decision tree (or tree-based ensemble, such as Random Forest). It does not modify the tree structure, and instead regularizes the tree by shrinking the prediction over each node towards the sample means of its ancestors (using a single regularization parameter). Experiments over a wide variety of datasets show that hierarchical shrinkage substantially increases the predictive performance of individual decision trees and decision-tree ensembles.  https://arxiv.org/abs/2202.00858
 
-<img src="[https://github.com/wanghaoxue0/HSTree/blob/main/image.png]" alt="image" style="zoom:50%;" />
+![image](https://github.com/wanghaoxue0/HSTree/blob/main/image.png)
 ##### Install all the packages 
 
 ```R
@@ -47,7 +47,7 @@ X_test <- X[-train_ind, ]
 y_test <- data.frame(y[-train_ind, ])
 colnames(y_test) <-"y"
 ```
-![image](https://github.com/wanghaoxue0/HSTree/blob/main/image.png)
+
 ##### Compare the original CART and hierarchical shrinkage tree
 
 ```R
