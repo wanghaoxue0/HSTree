@@ -26,12 +26,12 @@ source("fitCV.R")
 ##### Use the cross validation
 
 ```R
-set.seed(2023)
-X=read.csv("X.csv",header = FALSE)
-y=read.csv("y.csv",header = FALSE)
-colnames(y) <-"y"
-fit <- HSTreeRegressorCV(X, y, reg_param=c(0.1, 1, 10, 20, 50, 100, 500), cv=4, verbose=TRUE, shrinkage="constant") # the default estimator is CART
-
+> set.seed(2023)
+> X=read.csv("X.csv",header = FALSE)
+> y=read.csv("y.csv",header = FALSE)
+> colnames(y) <-"y"
+> fit <- HSTreeRegressorCV(X, y, reg_param=c(0.1, 1, 10, 20, 50, 100, 500), cv=4, verbose=TRUE, shrinkage="constant") # the default estimator is CART
+the best regulization parameter is 1 , its mean square error is 908.8491
 ```
 
 ##### Split the dataset
