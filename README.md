@@ -6,9 +6,8 @@
 
 This package is R version for the Hierarchical Shinkage algorithm based on python, there is another R package for [FIGS](https://github.com/wanghaoxue0/figs). algorithm. Hopefully more R version for [imodels](https://github.com/csinva/imodels) will be developed in the furture. The introduction manual of the package is in [Manual](https://github.com/wanghaoxue0/HSTree/blob/main/HSTree_0.8.0.pdf). 
 
-#### Introduction
-
-Hierarchical shinkage is an extremely fast post-hoc regularization method which works on any decision tree (or tree-based ensemble, such as Random Forest). It does not modify the tree structure, and instead regularizes the tree by shrinking the prediction over each node towards the sample means of its ancestors (using a single regularization parameter). Experiments over a wide variety of datasets show that hierarchical shrinkage substantially increases the predictive performance of individual decision trees and decision-tree ensembles.  https://arxiv.org/abs/2202.00858
+#### Result with HSTree package
+HSTree decreases mean square of prediction error in all shrinkage methods. It shows its superiority of generelization especially for random forest
 
 <img src="https://github.com/wanghaoxue0/HSTree/blob/main/image.png" width="700" />
 
