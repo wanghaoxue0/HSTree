@@ -46,7 +46,7 @@ X_test <- X[-train_ind, ]
 y_test <- data.frame(y[-train_ind, ])
 colnames(y_test) <-"y"
 ```
-
+![image-20230107202606902](https://tva1.sinaimg.cn/large/008vxvgGgy1h9vqrym8t5j310y0u0abr.jpg)
 ##### Compare the original CART and hierarchical shrinkage tree
 
 ```R
