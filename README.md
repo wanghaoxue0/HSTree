@@ -14,11 +14,12 @@ HSTree decreases MSPE in all shrinkage methods. It shows its superiority of gene
 ##### Install all the packages 
 
 ```R
+library(devtools)
 install_github("wanghaoxue0/HSTree")
 library(rpart)
 library(randomForest)
 library(gbm)
-#library(HSTree) 
+library(HSTree) 
 source("fit.R")
 source("fitCV.R")
 ```
